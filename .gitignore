@@ -1,0 +1,4 @@
+*
+!.gitignore
+!/wp-content/themes/portfolio
+# portfolioフォルダのみgit管理
