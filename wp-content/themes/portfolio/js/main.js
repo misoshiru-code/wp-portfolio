@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => { //DOMが読み込まれた
         constructor() {
             this.DOM = {};
             this.DOM.header = document.querySelector('.js-header'); //ヘッダーの要素取得
-            this.DOM.anchor = document.querySelectorAll('.js-header-logo>a, .js-headerNav-item>a'); //アンカータグの要素取得
+            this.DOM.anchor = document.querySelectorAll('.js-header-logo>a, .js-header-logo>a>span, .js-headerNav-item>a, .js-headerNav-item>a>span'); //アンカータグの要素取得
             this.DOM.openBtn = document.querySelectorAll('.js-top, .js-middle, .js-bottom'); //トグルアイコンの要素取得
             this.DOM.heroBottom = document.getElementById('js-topMain').getBoundingClientRect().bottom; //ターゲット要素のボトム位置を取得
             this._changeColor();

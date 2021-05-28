@@ -6,23 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>西ノ谷エンジニアリング</title>
-    <?php wp_deregister_script('jquery'); ?>
     <?php wp_head(); ?>
 </head>
 
 <body id="top">
     <header class="header js-header">
         <div class="header-inner">
-            <h1 class="header-logo js-header-logo"><a href="<?php echo home_url(); ?>">portfolio</a></h1>
+            <h1 class="header-logo js-header-logo"><a href="<?php echo home_url(); ?>"><span>portfolio</span></a></h1>
             <?php if (is_front_page()) : ?>
                 <nav class="headerNav">
                     <ul class="headerNav-list">
-                        <li class="headerNav-item js-headerNav-item"><a href="#top">Home</a></li>
-                        <li class="headerNav-item js-headerNav-item"><a href="#about">About</a></li>
-                        <li class="headerNav-item js-headerNav-item"><a href="#works">Works</a></li>
-                        <li class="headerNav-item js-headerNav-item"><a href="#skills">Skills</a></li>
-                        <li class="headerNav-item js-headerNav-item"><a href="#promise">Promise</a></li>
-                        <li class="headerNav-item js-headerNav-item"><a href="#contact">Contact</a></li>
+                        <li class="headerNav-item js-headerNav-item"><a href="#top"><span>Home</span></a></li>
+                        <li class="headerNav-item js-headerNav-item"><a href="#about"><span>About</span></a></li>
+                        <li class="headerNav-item js-headerNav-item"><a href="#works"><span>Works</span></a></li>
+                        <li class="headerNav-item js-headerNav-item"><a href="#skills"><span>Skills</span></a></li>
+                        <li class="headerNav-item js-headerNav-item"><a href="#promise"><span>Promise</span></a></li>
+                        <li class="headerNav-item js-headerNav-item"><a href="#contact"><span>Contact</span></a></li>
                     </ul>
                 </nav>
                 <div class="openBtn js-openBtn">

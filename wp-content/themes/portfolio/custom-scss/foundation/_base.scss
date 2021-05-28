@@ -70,6 +70,9 @@ a:link, a:hover, a:visited, a:active {
 .t-black {
     transition: .5s;
     color: $color-black!important;
+    &::before {
+        background: $color_black!important;
+    }
     &::after {
         background: $color_black!important;
     }

@@ -2,3 +2,4 @@
 05/05/21 9:27:09: custom-style.scss - Undefined mixin readMore: /Users/takasumikatayama/Local Sites/portfolio/app/public/wp-content/themes/portfolio/custom-scss/./object/_page-works.scss on line 84, at column 9
 05/05/21 9:28:11: custom-style.scss - Undefined mixin readMore: /Users/takasumikatayama/Local Sites/portfolio/app/public/wp-content/themes/portfolio/custom-scss/./object/_page-works.scss on line 84, at column 9
 05/17/21 1:22:06: custom-style.scss - parse error: failed at `translateY(-100%);` /Users/takasumikatayama/Local Sites/portfolio/app/public/wp-content/themes/portfolio/custom-scss/./object/_promise.scss on line 100, at column 9
+05/28/21 10:56:11: custom-style.scss - unclosed block: failed at `` /Users/takasumikatayama/Local Sites/portfolio/app/public/wp-content/themes/portfolio/custom-scss/./layout/_header.scss on line 238, at column 0
