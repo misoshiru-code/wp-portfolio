@@ -1,4 +1,17 @@
-*
+#publicディレクトリを除外
+/*
+
+#.gitignoreを監視
 !.gitignore
-!/wp-content/themes/portfolio
-# portfolioフォルダのみgit管理
+
+#wp-contentディレクトリを除外
+!/wp-content/
+
+#themesディレクトリを監視
+/wp-content/*
+!/wp-content/themes/
+
+#portfolioディレクトリを監視
+/wp-content/themes/*
+!/wp-content/themes/portfolio/
+

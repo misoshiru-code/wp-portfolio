@@ -1,0 +1,90 @@
+.pageTop {
+	position: fixed;
+	right: 3rem;
+	bottom: 3rem;
+    cursor: pointer;
+    background: $color-black;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .5s;
+    z-index: 10;
+    &:hover {
+        background: $color-white;
+        border: 1px solid $color-black;
+    }
+    @include mq() {
+        display: none!important;
+    }
+    &-size {
+        display: block;
+        font-size: 4rem;
+        color: $color_white;
+        line-height: 4.5rem;
+        transition: .5s;
+        &:hover {
+            color: $color_black;
+        }
+    }
+}
+
+.showBtn {
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.about {
+    padding: 8rem 3rem;
+    background: $color_white;
+    text-align: center;
+
+    &-heading {
+        @include heading();
+    }
+
+    &-text {
+        margin: 6rem 0;
+        font-size: 1.4rem;
+        line-height: 2.5;
+        color: $color-black;
+        @include mq(lg) {
+            font-size: 1.3rem;
+            line-height: 1.8;
+        }
+    }
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 30%;
+        @include mq() {
+            width: 80%;
+        }
+    }
+
+    .twitter {
+        @include snsIcon($color:#1C95E0);
+    }
+
+    .codepen {
+        @include snsIcon($color:#b8b8b8);
+    }
+
+    .github {
+        @include snsIcon($color:#2B3236);
+    }
+
+    .linkBox {
+        position: relative;
+        .readMore {
+            @include readMore();
+        }
+        .balloon {
+            @include balloon();
+        }
+    }
+}

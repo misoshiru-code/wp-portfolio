@@ -1,0 +1,50 @@
+.wpcf7 {
+    margin: 5rem auto 0;
+    width: 90%;
+    max-width: 80rem;
+    @include mq(lg) {
+        width: 60%;
+    }
+    @include mq() {
+        width: 90%;
+    }
+    & input[type="text"],
+    & input[type="email"],
+    & textarea {
+        margin-bottom: 1rem;
+        padding: 1.5rem;
+        display: block;
+        width: 100%;
+        border: solid 1px rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.15);
+        outline: none;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.5rem;
+    }
+    &-textarea {
+        height: 15rem;
+    }
+    &-submit, &-confirm, &-back {
+        margin: 4rem auto 0;
+        padding: 1.5rem;
+        display: block;
+        width: 20rem;
+        background: transparent;
+        border: solid 1px rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+        color: $color-white;
+        font-size: 1.4rem;
+        outline: none;
+        transition: .3s;
+        &:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+    }
+}
+
+.contact-label {
+    color: $color-white;
+    font-size: 1.4rem;
+    display: block;
+}

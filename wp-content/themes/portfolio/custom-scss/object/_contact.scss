@@ -1,0 +1,94 @@
+.contact {
+    padding: 8rem 0 15rem;
+    color: $color_white;
+    @include mq() {
+        padding: 8rem 0;
+    }
+
+    &-heading {
+        @include heading($color-white);
+    }
+
+    &-form {
+        margin: 5rem auto 0;
+        width: 50%;
+        @include mq(lg) {
+            width: 80%;
+        }
+    }
+}
+
+.bgSection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+
+    &-inner {
+        width: 100%;
+        height: 100%;
+        background: $color_black url("../img/contact-img.jpg");
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: -10;
+
+        &::before {
+            content: '';
+            display: block;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(56, 54, 52, 0.8);
+        }
+    }
+}
+
+.input-name, .input-text {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    display: block;
+    width: 100%;
+    //border: solid 1px rgba(255, 255, 255, 0.4);
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.15);
+    outline: none;
+    color: $color_white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    &::placeholder {
+        //color: rgba(255, 255, 255, 0.6);
+        color: $color-white;
+        font-size: 1.4rem;
+    }
+}
+
+.input-text {
+    height: 15rem;
+}
+
+.input-btn {
+    margin: 4rem auto 0;
+    padding: 1.5rem;
+    display: block;
+    width: 20rem;
+    background: transparent;
+    border: solid 1px rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    outline: none;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.05);
+    }
+}
