@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => { //DOMが読み込まれた
                 resolve(); //処理が完了したら値を返す
             })
                 .then(() => { //Promiseがコールバックされたら実行される
-                    setTimeout(() => this.DOM.loadBg.classList.add('hideBg'), 800); //0.8s後にサブターゲット要素を隠すクラスを追加
+                    setTimeout(() => this.DOM.loadBg.classList.add('hideBg'), 500); //0.5s後にサブターゲット要素を隠すクラスを追加
                 });
         }
     }

@@ -16,7 +16,7 @@
         background: $color-white;
         border: 1px solid $color-black;
     }
-    @include mq() {
+    @include mq(lg) {
         display: none!important;
     }
     &-size {

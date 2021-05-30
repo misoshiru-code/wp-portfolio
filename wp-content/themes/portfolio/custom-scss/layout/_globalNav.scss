@@ -3,7 +3,7 @@
 //=====================================================
 
 .bgNav {
-    background: rgba(0, 0, 0, 0.95);
+    background: $color-black;
     position: fixed;
     top: 0;
     left: 100%;
@@ -18,7 +18,7 @@
         transition: left .7s ease-in-out;
     }
 
-    @include mq(md) {
+    @include mq(lg) {
         display: block;
     }
 

@@ -168,7 +168,7 @@
             }
         }
     }
-    @include mq() {
+    @include mq(lg) {
         display: none;
     }
 }
@@ -177,7 +177,7 @@
     display: none;
     cursor: pointer;
     z-index: 110;
-    @include mq() {
+    @include mq(lg) {
         display: block;
     }
     .top, .middle, .bottom {
