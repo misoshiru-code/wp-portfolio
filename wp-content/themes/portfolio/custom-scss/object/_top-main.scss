@@ -3,24 +3,15 @@
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
-    background: $color-black url("../img/posterImage.jpg") no-repeat top center / cover;
+    background: $color-black;
     z-index: 0;
     &-text {
         padding: 0 10rem;
         position: absolute;
         bottom: 5rem;
-        z-index: 1;
+        z-index: 20;
         @include mq() {
             padding: 0 3rem;
-        }
-    }
-    &-subTitle {
-        margin-bottom: 0.5rem;
-        font-size: 4rem;
-        color: $color_white;
-        @include mq(lg) {
-            margin-bottom: 1.0rem;
-            font-size: 3rem;
         }
     }
     &-name {
@@ -32,30 +23,27 @@
             font-size: 2.3rem;
         }
     }
-    &-desc {
-        font-size: 1.8rem;
-        color: $color_white;
-        @include mq(lg) {
-            font-size: 1.4rem;
-        }
-        @include mq() {
-            font-size: 1.9rem;
-        }
+    &-bottomBox {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 12rem;
+        background: linear-gradient(to top, rgba(56,54,52,1) 0%, rgba(56,54,52,.5) 60%, rgba(56,54,52,0) 100%);
+        z-index: 10;
     }
 }
 
 .video {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: auto;
-    //opacity: 0.7;
+    top: 50%;
+    left: 50%;
+    opacity: .8;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
     z-index: 0;
     object-fit: cover;
-    @include mq() {
-        display: none;
-    }
 }
 
 .scrollText {
@@ -65,7 +53,7 @@
     color: $color_white;
     font-size: 1.4rem;
     transform: rotate(90deg);
-    z-index: 1;
+    z-index: 20;
     @include mq() {
         right: -0.4rem;
     }
@@ -76,7 +64,7 @@
 	right: 10.5rem;
 	bottom: 2rem;
     height: 5rem;
-    z-index: 1;
+    z-index: 20;
     @include mq() {
         right: 2rem;
     }

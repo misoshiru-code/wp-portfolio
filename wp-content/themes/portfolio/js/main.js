@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => { //DOMが読み込まれた
     class ptBtn {
         constructor(obj) {
             this.ptBtn = document.querySelector(obj.hookName); //トップへ戻るボタン要素の取得
-            this.hHeight = document.querySelector(obj.heightEl).clientHeight; //ヒーロービューの高さ取得
+            this.hHeight = window.innerHeight; //ウィンドウ内部の高さ取得
             this._addEvent();
         }
         _addEvent() {
@@ -189,8 +189,7 @@ document.addEventListener('DOMContentLoaded', () => { //DOMが読み込まれた
 
     window.addEventListener("scroll", () => { //マウススクロールで発火
         const pb = new ptBtn({ //指定要素までスクロールでページトップに戻るボタンの表示
-            hookName: '.js-pageTop',
-            heightEl: '.js-topMain'
+            hookName: '.js-pageTop'
         })
     });
 

@@ -50,6 +50,7 @@
     
     &-heading {
         font-size: 3rem;
+        color: $color_white;
     }
 }
 
@@ -73,7 +74,7 @@
         a {
             font-size: 5rem;
             line-height: 1.75;
-            color: $color_black;
+            color: $color_white;
             transition: color 0.5s;
     
             @include mq() {
@@ -92,9 +93,9 @@
                 transition: width 0.8s;
             }
             &:hover {
-                color: $color_white;
+                color: $color_black;
                 &::before {
-                    background: $color_white;
+                    background: $color_black;
                     width: 3.6rem;
                 }
             }

@@ -13,10 +13,11 @@
     </div>
     <p class="scrollText">SCROLL</p>
     <div class="scrollGuide"><i></i></div>
-    <video class="video" autoplay loop muted poster="<?php echo get_template_directory_uri(); ?>/img/posterImage.jpg">
-        <source src="<?php echo get_template_directory_uri(); ?>/mov/top-movie.mp4" type="video/mp4">
+    <video class="video" playsinline autoplay loop muted poster="<?php echo get_template_directory_uri(); ?>/img/posterImage.jpg">
+        <source src="<?php echo get_template_directory_uri(); ?>/mov/top-movie.mov" type="video/mp4">
         <img src="<?php echo get_template_directory_uri(); ?>/img/posterImage.jpg">
     </video>
+    <div class="topMain-bottomBox"></div>
 </div><!-- /TopMain -->
 
 <main class="main">

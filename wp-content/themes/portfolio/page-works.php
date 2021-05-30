@@ -1,6 +1,18 @@
 <?php get_header(); ?>
 
+<div class="loading js-loading">
+    <div class="loading-anime js-loading-anime">
+        <div class="loading-circle"></div>
+        <div class="loading-text js-loading-text">Now Loading</div>
+    </div>
+</div><!--loading-->
+
 <main class="main">
+
+    <div class="pageTop js-pageTop">
+        <i class="fas fa-chevron-up pageTop-size"></i>
+    </div><!--pageTop-->
+
     <section class="pageWorks">
         <h2 class="pageWorks-heading">Works</h2>
         <div class="pageWorks-wrapper">
