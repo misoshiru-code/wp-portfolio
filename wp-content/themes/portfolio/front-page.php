@@ -17,7 +17,7 @@
         <source src="<?php echo get_template_directory_uri(); ?>/mov/top-movie.mov" type="video/mp4">
         <img src="<?php echo get_template_directory_uri(); ?>/img/posterImage.jpg">
     </video>
-    <div class="topMain-bottomBox"></div>
+    <div class="topMain-box"></div>
 </div><!-- /TopMain -->
 
 <main class="main">
