@@ -89,13 +89,12 @@
                 left: -4.4rem;
                 width: 0px;
                 height: 1px;
-                background: $color_black;
+                background: $color_white;
                 transition: width 0.8s;
             }
             &:hover {
-                color: $color_black;
+                color: $color_white;
                 &::before {
-                    background: $color_black;
                     width: 3.6rem;
                 }
             }
