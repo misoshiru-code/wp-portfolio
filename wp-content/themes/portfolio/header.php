@@ -42,9 +42,9 @@
                             <li class="globalNav-item"><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
-                    <div class="bgNav-aside">
+                    <!-- <div class="bgNav-aside">
                         <h2 class="bgNav-heading">portfolio</h2>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
