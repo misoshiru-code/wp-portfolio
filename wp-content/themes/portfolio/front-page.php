@@ -9,7 +9,7 @@
 
 <div class="topMain js-topMain" id="js-topMain">
     <div class="topMain-text">
-        <p class="topMain-name">Nishinoya-engineering</p>
+        <p class="topMain-name">Nishinoya-Code</p>
     </div>
     <p class="scrollText">SCROLL</p>
     <div class="scrollGuide"><i></i></div>

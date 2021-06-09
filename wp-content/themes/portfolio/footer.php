@@ -1,5 +1,5 @@
 <footer class="footer">
-    <p class="copyright">&copy; 2021 Nishinoya-engineering All Rights Reserved.</p>
+    <p class="copyright">&copy; 2021 Nishinoya-Code All Rights Reserved.</p>
 </footer>
 
  <?php wp_footer(); ?>
