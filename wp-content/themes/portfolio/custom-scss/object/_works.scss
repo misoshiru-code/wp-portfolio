@@ -27,6 +27,7 @@
         width: 100%;
         height: auto;
         transition: all .5s ease 0.1s;
+
         &:before {
             content: "Click More";
             position: absolute;
@@ -42,6 +43,7 @@
             font-size: 2rem;
             text-shadow: 0 0 .5rem $color-black;
         }
+
         &:hover {
             transform: scale(1.1);
             &::before {
