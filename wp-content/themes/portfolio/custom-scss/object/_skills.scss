@@ -44,14 +44,13 @@
     }
 
     &-title {
-        margin: 2rem;
-        margin-top: 0;
+        margin: 0 2rem;
         font-size: 2rem;
         color: $color-black;
     }
 
     &-desc {
-        margin: 0 2rem;
+        margin: 2rem 2rem 0;
         font-size: 1.4rem;
         line-height: 1.8;
         text-align: left;

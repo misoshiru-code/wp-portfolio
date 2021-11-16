@@ -11,7 +11,8 @@
     height: 100%;
     z-index: 100;
     display: none;
-    transition: left .7s ease-in-out;
+    transition: left .5s ease-in-out;
+    overflow: hidden auto;
 
     &.open {
         left: 0;
@@ -28,11 +29,9 @@
         justify-content: center;
         height: 100%;
         @include mq() {
-            align-items: normal;
             display: block;
-            position: absolute;
-            top: 17%;
-            left: 4rem;
+            padding-top: 10rem;
+            padding-left: 4rem;
         }
     }
 
@@ -47,7 +46,7 @@
             padding-top: 2rem;
         }
     }
-    
+
     &-heading {
         font-size: 3rem;
         color: $color_white;
@@ -76,7 +75,13 @@
             line-height: 1.75;
             color: $color_white;
             transition: color 0.5s;
-    
+
+            span {
+                font-size: 0.4em;
+                opacity: 0;
+                transition: all .5s;
+            }
+
             @include mq() {
                 font-size: 4.3rem;
                 line-height: 1.5;
@@ -92,8 +97,13 @@
                 background: $color_white;
                 transition: width 0.8s;
             }
-            &:hover {
-                color: $color_white;
+            &:hover,
+            &:active {
+
+                span {
+                    margin-left: .5em;
+                    opacity: 1;
+                }
                 &::before {
                     width: 3.6rem;
                 }

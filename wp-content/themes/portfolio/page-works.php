@@ -14,7 +14,7 @@
     </div><!--pageTop-->
 
     <section class="pageWorks">
-        <h2 class="pageWorks-heading">Works</h2>
+        <h2 class="pageWorks-heading">Works<span>制作例</span></h2>
         <div class="pageWorks-wrapper">
             <?php
             $args = array(

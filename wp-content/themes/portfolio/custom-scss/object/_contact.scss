@@ -6,7 +6,7 @@
     }
 
     &-heading {
-        @include heading($color-white);
+        @include heading($color_white_tp, $color_white);
     }
 
     &-form {

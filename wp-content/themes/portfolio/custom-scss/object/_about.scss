@@ -1,7 +1,7 @@
 .pageTop {
-	position: fixed;
-	right: 3rem;
-	bottom: 3rem;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
     cursor: pointer;
     background: $color-black;
     width: 5rem;
@@ -10,21 +10,21 @@
     border-radius: 50%;
     text-align: center;
     opacity: 0;
-    transition: opacity .5s;
+    transition: opacity 0.5s;
     z-index: 10;
     &:hover {
         background: $color-white;
         border: 1px solid $color-black;
     }
     @include mq(lg) {
-        display: none!important;
+        display: none !important;
     }
     &-size {
         display: block;
         font-size: 4rem;
         color: $color_white;
         line-height: 4.5rem;
-        transition: .5s;
+        transition: 0.5s;
         &:hover {
             color: $color_black;
         }
@@ -33,7 +33,7 @@
 
 .showBtn {
     opacity: 1;
-    transition: opacity .5s;
+    transition: opacity 0.5s;
 }
 
 .about {
@@ -45,8 +45,14 @@
         @include heading();
     }
 
+    &-name {
+        margin-top: 6rem;
+        font-size: 2rem;
+        color: $color-black;
+    }
+
     &-text {
-        margin: 6rem 0;
+        margin-top: 6rem;
         font-size: 1.4rem;
         line-height: 2.5;
         color: $color-black;
@@ -59,23 +65,67 @@
     &-list {
         display: flex;
         justify-content: space-between;
-        margin: 0 auto;
+        margin: 6rem auto 0;
         width: 30%;
         @include mq() {
             width: 80%;
+            flex-wrap: wrap;
+        }
+    }
+
+    &-item {
+        a {
+            position: relative;
+            display: inline-block;
+
+            span {
+                position: absolute;
+                display: inline-block;
+                top: 38%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                font-size: 2rem;
+                pointer-events: none;
+                // text-shadow: 0 0 3px $color_white;
+                opacity: 0;
+                transition: 0.5s;
+                text-shadow: 1px 1px 0 $color_white, -1px -1px 0 $color_white, -1px 1px 0 $color_white,
+                    1px -1px 0 $color_white, 0px 1px 0 $color_white, 0-1px 0 $color_white, -1px 0 0 $color_white,
+                    1px 0 0 $color_white;
+            }
+
+            &:hover {
+                span {
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        i {
+            padding: 0 1.2rem;
+        }
+
+        @include mq() {
+            flex-basis: 50%;
         }
     }
 
     .twitter {
-        @include snsIcon($color:#1C95E0);
+        @include snsIcon($color: #1c95e0);
     }
 
     .codepen {
-        @include snsIcon($color:#b8b8b8);
+        @include snsIcon($color: #b8b8b8);
     }
 
     .github {
-        @include snsIcon($color:#2B3236);
+        @include snsIcon($color: #2b3236);
+    }
+
+    .blog {
+        @include snsIcon($color: #82c91e);
     }
 
     .linkBox {

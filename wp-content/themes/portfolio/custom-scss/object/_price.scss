@@ -1,0 +1,57 @@
+.price {
+    padding: 8rem 0;
+    background: $color_black;
+    color: $color_white;
+
+    &-inner {
+        width: 90%;
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    &-heading {
+        @include heading($color_white_tp, $color_white);
+    }
+
+    &-title {
+        margin-top: 6rem;
+        font-size: 2rem;
+        color: $color-white;
+        text-align: center;
+    }
+
+    &-table {
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: left;
+        margin-top: 6rem;
+        border-spacing: 0;
+        border-collapse: collapse;
+
+        th,td {
+            width: 50%;
+            padding: .6em 1em;
+            font-weight: normal;
+            border: 1px solid rgba(250, 250, 250, .2);
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        @include mq(lg) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &-text {
+        font-size: 1.4rem;
+        line-height: 2.5;
+        color: $color-white;
+        margin-top: 1rem;
+        @include mq(lg) {
+            font-size: 1.3rem;
+            line-height: 1.8;
+        }
+    }
+}
